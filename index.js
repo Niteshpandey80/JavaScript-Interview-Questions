@@ -100,3 +100,21 @@ const arr2 = [5,6,7,8] ;
 arr1.push(...arr2)
 console.log(arr1);
 
+Q 11 Remove duplicate values from an array.
+var arr = [2,8,5,3,2] 
+var founded = false ; 
+for(var i=0 ; i<arr.length ; i++){
+    for(var j =i+1 ; j<arr.length ; j++){
+       if(arr[i]==arr[j]){
+        founded = true ;
+        break ; 
+       }
+    }
+    if(founded)break ;   
+}
+ if(founded){
+        console.log("Finded");    
+    }else{
+        console.log("NO Finded");
+        
+}
