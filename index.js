@@ -146,3 +146,4 @@ for(var i=0 ; i<arr.length ; i++){
 }
 console.log(sl);
 
+Q 14 Move all zeroes to the end of the array. 
