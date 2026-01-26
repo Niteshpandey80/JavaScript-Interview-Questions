@@ -133,6 +133,7 @@ for(var i=0 ; i<arr.length ; i++){
 console.log(arr);
 
 Q 13 . Find the second largest number in an array.
+
 var arr = [9,2,3,4] 
 var lg = -Infinity;
 var sl = -Infinity;
@@ -150,14 +151,22 @@ Q 14 Move all zeroes to the end of the array.
 
 const arr = [0, 1, 0, 3, 12];
 let index = 0 ;
-for(var i=0 ; i<arr.length ; i++){
-   if(arr[i]!== 0 ){
-    arr[index] = arr[i];
-    index++;
-   }
+for(let i = 0 ; i<arr.length ; i++){
+    if(arr[i]!==0){
+        arr[index]=arr[i];
+        index++
+    }
 }
 for(let i=index ; i<arr.length ; i++){
     arr[i]=0;
 }
 console.log(arr);
 
+Q 15 Find the missing number from an array of 1–10. 
+const arr = [1,2,3,5,6,7,8,9,10];
+var sum = 0 ; 
+for(var i=0 ; i<arr.length ; i++){
+  sum = sum + arr[i];
+}
+let missing = 55 - sum ; 
+console.log(missing);
