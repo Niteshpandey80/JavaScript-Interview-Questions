@@ -170,3 +170,20 @@ for(var i=0 ; i<arr.length ; i++){
 }
 let missing = 55 - sum ; 
 console.log(missing);
+
+Q 16 Check if two arrays are equal. 
+
+const arr1 = [2,3,5,7,8];
+const arr2 = [2,3,1,6,7];
+var finded = true ; 
+if(arr1.length !== arr2.length){
+    finded = false ;
+}
+for(var i=0 ; i<arr1.length ; i++){
+    if(arr1[i]!==arr2[i]){
+        finded = false ; 
+        break ; 
+    }
+    
+}
+console.log(finded);
