@@ -174,16 +174,29 @@ console.log(missing);
 Q 16 Check if two arrays are equal. 
 
 const arr1 = [2,3,5,7,8];
-const arr2 = [2,3,1,6,7];
+const arr2 = [2,3,5,7,8];
 var finded = true ; 
-if(arr1.length !== arr2.length){
-    finded = false ;
+
+my logic
+
+for(var i=0 ; i<arr1.length ; i++){    
 }
-for(var i=0 ; i<arr1.length ; i++){
-    if(arr1[i]!==arr2[i]){
+for(var j=0 ; j<arr2.length ; j++){
+}
+if(arr1[i]!==arr2[j]){
+        finded = false ; 
+}
+console.log(finded);
+
+if(arr1.length !== arr2.length){
+    finded = false ; 
+}else{
+    for(var i=0 ; i<arr1.length ; i++){
+    if(arr1[i] !== arr2[i]){
         finded = false ; 
         break ; 
     }
-    
+}
 }
 console.log(finded);
+
